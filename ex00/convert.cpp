@@ -9,7 +9,7 @@ void	printType(const std::string& type)
 
 void	cChar(double val)
 {
-	char	c = val;
+	char	c = static_cast<char>(val);
 
 	if (val != val || !isascii(val))
 		std::cout << "impossible";
@@ -21,7 +21,7 @@ void	cChar(double val)
 
 void	cInt(double val)
 {
-	int	i = val;
+	int	i = static_cast<int>(val);
 
 	if (val != val || val < INT_MIN || val > INT_MAX)
 		std::cout << "impossible";
@@ -31,7 +31,7 @@ void	cInt(double val)
 
 void	cFloat(double val)
 {
-	float	f = val;
+	float	f = static_cast<float>(val);
 
 	std::cout << f << "f";
 }
