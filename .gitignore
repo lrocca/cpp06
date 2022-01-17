@@ -1,0 +1,7 @@
+*.o
+*.gch
+.vscode
+.DS_Store
+
+# ex00
+convert
